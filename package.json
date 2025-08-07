@@ -1,0 +1,26 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "jest",
+    "test:e2e": "jest e2e"
+  },
+  "dependencies": {
+    "express": "5.1.0",
+    "yarn": "^1.22.22",
+    "zod": "^4.0.15"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "22.15.32",
+    "@types/supertest": "^6.0.3",
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

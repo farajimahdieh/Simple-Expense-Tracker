@@ -1,0 +1,20 @@
+POST http://localhost:3000/expense/add
+Content-Type: application/json
+
+{
+    "userid": 1,
+    "amount" : 1000,
+    "event" : "shomal",
+    "groupid" : 1
+}
+
+###
+GET http://localhost:3000/user/view/1
+Content-Type: application/json
+###
+
+GET http://localhost:3000/service/2
+Content-Type: application/json
+###
+GET http://localhost:3000/calculate
+Content-Type: application/json
