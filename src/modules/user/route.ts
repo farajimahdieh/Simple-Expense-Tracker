@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { users } from "../user/types";
 import { Calculatedebts, CalculateSpentMoney } from "./service";
+import { findUserById } from "./user-repository";
 
 
 export const userRouter = Router()
@@ -9,8 +9,8 @@ export const userRouter = Router()
 
 userRouter.get("/view/:userid", (req, res) => {
 
-    const userid = parseInt(req.params.userid)
-    const validuser = users.find(x => x.id === userid);
+    const userid = parseInt(req.params.userid)  // can i do sth about this line?
+    const validuser = findUserById(userid)
     
     if (!validuser) {
        res.status(404).send("User not found");
@@ -28,7 +28,7 @@ userRouter.get("/debt/:userid", (req, res) => {
 
 
     const userid = parseInt(req.params.userid)
-    const validuser = users.find(x => x.id === userid);
+    const validuser = findUserById(userid)
     
     if (!validuser) {
        res.status(404).send("User not found");

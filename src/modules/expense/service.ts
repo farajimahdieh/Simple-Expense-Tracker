@@ -4,6 +4,7 @@ import { groups } from "../group/types"
 
 
 
+
 export const calculate = () => {
 
     const ExpenseList: { userid: number, amount: number }[] = []

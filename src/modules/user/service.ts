@@ -2,6 +2,7 @@
 import { expenses } from "../expense/types"
 import User from "./types"
 
+
 export const CalculateSpentMoney = (validid : number) =>{
     
     let total_expense = 0
